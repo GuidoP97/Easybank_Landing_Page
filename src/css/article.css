@@ -1,0 +1,45 @@
+/********** ARTICLE SECTION **********/
+/********** ARTICLE SECTION **********/
+/********** ARTICLE SECTION **********/
+
+.article-section {
+  background-color: var(--very-light-gray);
+}
+
+.article {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  row-gap: 4rem;
+  column-gap: 2rem;
+}
+
+.article-box {
+  background-color: var(--white);
+  background-origin: 1px solid transparent;
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+.article-box img {
+  width: 100%;
+  height: 18rem;
+}
+
+.article-content {
+  padding: 2rem;
+  padding-top: .5rem;
+}
+
+.article-author {
+  font-size: 1.2rem;
+}
+
+.article-heading {
+  font-size: 1.7rem;
+  font-weight: normal;
+  color: var(--dark-blue);
+}
+
+.article-excerpt {
+  font-size: 1.3rem;
+}

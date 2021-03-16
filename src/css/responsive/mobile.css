@@ -1,0 +1,68 @@
+/* MOBILE RESPONSIVE MENU QUERIES */
+@media screen and (max-width: 832px) {
+  nav .btn {
+    display: none;
+  }
+
+  .hamburger {
+    display: inline-block;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+  }
+
+  .hamburger img {
+    width: 3rem;
+  }
+
+  .nav-ul {
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    margin-top: 4rem;
+    background-color: var(--white);
+    border: 1px solid skyblue;
+    border-radius: .3rem;
+    transform: translateY(-200%);
+    transition: all .5s;
+    z-index: 999;
+  }
+
+  .nav-ul .nav-link {
+    padding: 1rem 0;
+    font-size: 1.6rem;
+  }
+
+  .nav-link a {
+    color: var(--dark-blue);
+    font-weight: 400;
+  }
+
+  .nav-link a:hover {
+    color: var(--lime-green);
+  }
+
+  nav .nav-ul .nav-link a:hover::before {
+    opacity: 0;
+  }
+
+  /* SLIDE THE MANU WHE THE HAMBURGER IS CLICKED */
+
+  #toggle:checked ~ .nav-ul {
+    transform: translateY(1%);
+  }
+
+  #toggle:checked ~ .hamburger {
+    border: 1px solid gray;
+    border-radius: .3rem;
+    padding: .4rem;
+  }
+}
+
+@media screen  and (min-width: 300px) and (max-width: 500px) {
+  .welcome-image::before {
+    background-position: top 10rem left 0rem;
+  }
+}
